@@ -249,11 +249,39 @@ function Storefront({ products, loadMessage }) {
 
       </main>
 
-      <footer className="footer">
-        <strong>Gift Fox</strong>
-        <span>Seçdiyiniz məhsullar gün ərzində hazırlanır və sürətli çatdırılır</span>
-        <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-          <a href="mailto:giftfox.az@gmail.com">giftfox.az@gmail.com</a>
+      <footer className="footer" style={{ padding: "40px 0", flexWrap: "wrap", gap: "28px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px", maxWidth: "340px" }}>
+          <strong>Gift Fox</strong>
+          <span>Seçdiyiniz məhsullar gün ərzində hazırlanır və sürətli çatdırılır</span>
+        </div>
+        
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px", minWidth: "220px" }}>
+          {/* Email */}
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--rose-soft)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+              <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <a href="mailto:giftfox.az@gmail.com" style={{ fontSize: "0.9rem" }}>giftfox.az@gmail.com</a>
+          </div>
+          
+          {/* Instagram */}
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--rose-soft)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            <a href="https://www.instagram.com/giftfox.az/reels/" target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.9rem" }}>@giftfox.az</a>
+          </div>
+          
+          {/* TikTok */}
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="var(--rose-soft)" style={{ flexShrink: 0 }}>
+              <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.6-4.06-1.51-.77-.6-1.39-1.39-1.87-2.26v9.37c-.16 2.06-1.04 4.09-2.73 5.3-1.8 1.34-4.22 1.83-6.42 1.33-2.55-.58-4.82-2.39-5.75-4.84-1.12-2.92-.35-6.52 1.95-8.67 1.82-1.74 4.47-2.43 6.94-1.88v4.21c-1.39-.41-2.97-.13-4.08.77-1.11.89-1.63 2.4-1.36 3.79.23 1.25 1.14 2.37 2.37 2.78 1.48.51 3.25.1 4.22-1.07.57-.69.83-1.58.82-2.47-.02-3.32-.01-6.64-.01-9.97.01 0 .01 0 .02-.01z"/>
+            </svg>
+            <a href="https://www.tiktok.com/@giftfox.az" target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.9rem" }}>@giftfox.az</a>
+          </div>
+        </div>
+
+        <div style={{ alignSelf: "center" }}>
           <a href="/admin" style={{ opacity: 0.7, fontSize: "0.85rem", fontWeight: "normal" }}>Admin Panel</a>
         </div>
       </footer>
