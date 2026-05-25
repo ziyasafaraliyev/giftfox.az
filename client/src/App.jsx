@@ -252,7 +252,10 @@ function Storefront({ products, loadMessage }) {
       <footer className="footer">
         <strong>Gift Fox</strong>
         <span>Seçdiyiniz məhsullar gün ərzində hazırlanır və sürətli çatdırılır</span>
-        <a href="mailto:giftfox.az@gmail.com">giftfox.az@gmail.com</a>
+        <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+          <a href="mailto:giftfox.az@gmail.com">giftfox.az@gmail.com</a>
+          <a href="/admin" style={{ opacity: 0.7, fontSize: "0.85rem", fontWeight: "normal" }}>Admin Panel</a>
+        </div>
       </footer>
 
       {isCartOpen && (
